@@ -1,0 +1,239 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+$main-color: #0ee951;
+$light-color: #212d37;
+$dark-color: #1c262f;
+$gradient: linear-gradient(to right, #0ee951, #00dabf);
+
+a:focus,
+button:focus,
+input:focus {
+  box-shadow: none !important;
+}
+
+.btn_link {
+  border: solid 1px $main-color;
+  color: #fff;
+  padding: 10px 30px;
+  box-shadow: 5px 5px 0px 0px #0ee951;
+  &:hover {
+    color: $main-color;
+    box-shadow: 3px 3px 0px 0px #0ee951;
+  }
+}
+
+.header {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  .logo {
+    color: #fff;
+    font-weight: 700;
+    &:hover {
+      color: $main-color;
+    }
+  }
+  .ul-list li a {
+    color: #fff !important;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    active {
+      color: $main-color !important;
+      font-weight: 700;
+    }
+    &:hover {
+      color: $main-color !important;
+    }
+  }
+  .social a {
+    background: -webkit-gradient(linear, left top, left bottom, from(#0ee951), to(#00dabf)) !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 28px;
+    height: 28px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+  }
+  @media (max-width: 991px) {
+    background: #1c262f !important;
+  }
+}
+
+.scroll_header {
+  background: #1c262f !important;
+  padding: 0.5rem;
+  padding-bottom: 0.5rem;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.03);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.03);
+}
+
+// start section-home ---------
+.section-home {
+  background-image: url(../images/home.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+  .title {
+    h1 {
+      font-size: 60px;
+      font-weight: 500;
+      color: #fff;
+      span {
+        background: -webkit-gradient(linear, left top, left bottom, from(#0ee951), to(#00dabf));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      @media (max-width: 767px) {
+        font-size: 40px;
+      }
+    }
+    p {
+      opacity: 0.7;
+      color: #f8f9fa;
+    }
+  }
+  .view {
+    span {
+      color: rgb(255, 255, 255) !important;
+      display: block;
+      margin-bottom: 15px;
+      svg {
+        color: $main-color;
+      }
+    }
+  }
+  a {
+    @extend .btn_link;
+  }
+}
+// End section-home ---------
+
+// start speed -------
+.speed {
+  background: $light-color;
+  color: #fff;
+  .box {
+    background: $dark-color;
+    svg {
+      color: $main-color;
+    }
+    p {
+      opacity: 0.7;
+    }
+  }
+  .about-us {
+    .box_item {
+      h2 {
+        font-size: 50px;
+        @media (max-width: 767px) {
+          font-size: 30px;
+        }
+      }
+      p {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+// End speed -------
+
+// start services -------
+.services {
+  background: $dark-color;
+  color: #fff;
+  .box {
+    transition: all 0.5s;
+    &:hover {
+      border: solid 1px $main-color !important;
+      color: #fff;
+      padding: 10px 30px;
+      box-shadow: 5px 5px 0px 0px #0ee951;
+    }
+    svg {
+      color: $main-color;
+    }
+  }
+}
+
+// start plans ----------
+.plans {
+  background: $light-color;
+  color: #fff;
+  .box {
+    svg {
+      color: $main-color;
+    }
+  }
+}
+// End plans ---------
+
+// start work --------
+.work {
+  background: $dark-color;
+  color: #fff;
+  .icon {
+    svg {
+      color: $main-color;
+      margin-bottom: 10px;
+    }
+  }
+  .testimonials {
+    .swiper-slide {
+      border: 10px solid;
+      border-image-slice: 1;
+      border-width: 3px;
+      border-image-source: $gradient;
+
+      img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+// End work --------
+
+// start subscribe ------
+.subscribe {
+  background: $light-color;
+  color: #fff;
+  .input-box {
+    button {
+      border-width: 2px;
+      padding: 10px 30px;
+      border-image-slice: 1;
+      background-image: none;
+      background: transparent;
+      border-image-source: $gradient;
+    }
+  }
+}
+// End subscribe ------
+
+// start contact --------
+.contact {
+  background: $dark-color;
+}
+// End contact --------
