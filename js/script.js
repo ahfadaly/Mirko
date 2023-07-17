@@ -25,7 +25,7 @@ links.forEach((link) => {
   link.addEventListener(`click`, function (e) {
     e.preventDefault();
     let href = this.getAttribute("href");
-    let offsetTop = document.querySelector(href).offsetTop - 50;
+    let offsetTop = document.querySelector(href).offsetTop - 80;
     scroll({
       top: offsetTop,
       behavior: "smooth",

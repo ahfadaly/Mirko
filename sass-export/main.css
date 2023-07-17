@@ -115,7 +115,7 @@ input:focus {
   color: #f8f9fa;
 }
 .section-home .view span {
-  color: rgb(255, 255, 255) !important;
+  color: white !important;
   display: block;
   margin-bottom: 15px;
 }
